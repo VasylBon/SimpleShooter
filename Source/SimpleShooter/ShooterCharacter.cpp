@@ -42,6 +42,11 @@ float AShooterCharacter::TakeDamage(float DamageAmount, struct FDamageEvent cons
 	return Health;
 }
 
+bool AShooterCharacter::IsDead() const
+{
+	return Health <= 0;
+}
+
 // Called to bind functionality to input
 void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {

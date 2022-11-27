@@ -1,0 +1,11 @@
+.vs
+*.sln
+DerivedDataCache/
+Intermediate/
+Saved/
+Script/
+Binaries/
+Build/
+MedievalDungeon/
+AssetPacks/
+/Sandbox_BuiltData.uasset

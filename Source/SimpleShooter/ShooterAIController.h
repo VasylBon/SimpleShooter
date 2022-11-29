@@ -21,7 +21,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY()
-	 APawn* PlayerPawn;
+	APawn* PlayerPawn;
 	
 	UPROPERTY(EditAnywhere)
 	float AcceptanceDistance = 400.f;

@@ -22,4 +22,11 @@ public:
 
 	UPROPERTY()
 	 APawn* PlayerPawn;
+	
+	UPROPERTY(EditAnywhere)
+	float AcceptanceDistance = 400.f;
+
+private:
+	UPROPERTY(EditAnywhere)
+	class UBehaviorTree* AIBehavior;
 };

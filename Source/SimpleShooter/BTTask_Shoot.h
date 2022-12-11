@@ -7,13 +7,12 @@
 #include "BTTask_Shoot.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class SIMPLESHOOTER_API UBTTask_Shoot : public UBTTaskNode
 {
 	GENERATED_BODY()
-	
 public:
 	UBTTask_Shoot();
 

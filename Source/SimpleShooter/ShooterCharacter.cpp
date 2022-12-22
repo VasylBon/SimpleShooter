@@ -102,3 +102,8 @@ void AShooterCharacter::Shoot()
 {
 	Gun->PullTrigger();
 }
+
+float AShooterCharacter::GetHealthPercent() const
+{
+	return Health / MaxHealth;
+}

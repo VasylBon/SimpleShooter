@@ -20,6 +20,8 @@ public:
 
 private:
 
+	virtual void BeginPlay() override;
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class UUserWidget> WinScreenClass;
 
@@ -27,7 +29,13 @@ private:
 	TSubclassOf<class UUserWidget> LoseScreenClass;
 
 	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> HUDClass;
+
+	UPROPERTY(EditAnywhere)
 	float RestartDelay = 5;
 
 	FTimerHandle RestartTimer;
+
+	UPROPERTY();
+	UUserWidget* HUD;
 };

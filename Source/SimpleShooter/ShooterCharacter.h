@@ -18,7 +18,10 @@ public:
 	AShooterCharacter();
 
 	UFUNCTION(BlueprintPure)
-		bool IsDead() const;
+	bool IsDead() const;
+
+	UFUNCTION(BlueprintPure)
+	float GetHealthPercent() const;
 
 protected:
 	// Called when the game starts or when spawned
